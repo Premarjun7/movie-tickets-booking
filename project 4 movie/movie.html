@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Movie list</title>
+        <link rel="stylesheet" href="movie.css">
+        
+    </head>
+    <body >
+       <div class="movie-picker"> 
+        <small > <b> Pick a movie:</b></small>
+   
+       <select id="movie">
+           <option value="10" >Avengers endgame($10)</option>
+           <option value="12" >Joker($12)</option>
+           <option value="8" >Toy story 4($8)</option>
+           <option value="9" >The lion king($9)</option>
+       </select>
+    </div>
+   
+    <ul class="texts">
+        <li>
+            <div class="seat"></div>
+            <small>N/a</small>
+        </li>
+        <li>
+            <div class="seat selected "></div>
+            <small>Selected</small>
+        </li>
+        <li>
+            <div class="seat occupied"></div>
+            <small>Occupied</small>
+        </li>
+    </ul>
+    <br> <br>
+   <div class="container">
+   <div class="screen"></div>
+   <div class="row">
+       <div  class="seat" ></div>
+       <div class="seat" ></div>
+       <div class="seat" ></div>
+       <div class="seat occupied"></div>
+       <div class="seat"></div>
+       <div class="seat"></div>
+       <div class="seat occupied"></div>
+       <div class="seat occupied"></div>
+       <div class="seat"></div>
+   </div>
+   <div class="row">
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat occupied"></div>
+    <div class="seat"></div>
+    <div class="seat occupied"></div>
+    <div class="seat"></div>
+</div>
+<div class="row">
+    <div class="seat"></div>
+    <div class="seat occupied"></div>
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat occupied"></div>
+    <div class="seat"></div>
+    <div class="seat occupied"></div>
+    <div class="seat"></div>
+    <div class="seat"></div>
+</div>
+<div class="row">
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat"></div>
+    <div class="seat "></div>
+    <div class="seat occupied"></div>
+    <div class="seat"></div>
+    <div class="seat occupied"></div>
+    <div class="seat"></div>
+</div>
+ <p class="text">You had been selected <span id="count"> 0</span>seats for a price of $ <span id="total">0</span></p>
+       </div>
+               <script src="movie.js"></script>
+    </body>
+</html>

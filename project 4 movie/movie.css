@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    background-color:blue;
+    color: white;
+    text-align: center;
+    margin-left: 350px;
+    margin-top: 100px;
+    width: 500px;
+   justify-content: center;
+   align-items: center;
+   height: 100vh
+      
+   
+}
+.texts{
+list-style-type: none;
+display: flex;
+text-align: center;
+align-items: center;
+justify-content: space-between;
+width: auto
+}
+#movie{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+     border-radius: 5px;
+     padding: 5px;
+     font-size: 15px;
+     border: 0;
+     appearance: none;
+     width: 100%;
+}
+.movie-picker{
+    width:250px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+    
+}
+.seat{
+   background-color: tomato;
+   height: 12px;
+   width: 10px;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+   margin: 10px;
+
+  
+}
+.seat.selected{
+  background-color: black;
+}
+.seat.occupied{
+    background-color: white;
+}
+.seat:nth-of-type(2){
+    margin-right: 30px;
+}
+.seat:nth-last-of-type(2){
+    margin-left: 30px;
+}
+.seat:not(.occupied):hover{
+    cursor: pointer;
+    transform: scale(1.2)
+}
+.texts .seat:not(.occupied):hover{
+    cursor: default;
+    transform: scale(1);
+}
+.texts li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        text-align: center;
+    margin: 0 10px;
+    
+}
+.row{
+    display: flex;
+    width: 500px
+}
+
+.screen{
+    background-color: white;
+    width: 100%;
+    height: 150px;
+    transform: rotateX(-45deg);
+   margin: 15px 0;
+    box-shadow: 0 3px 10px rgba(255,255,250,0.75)
+    
+}
+.container{
+    perspective: 1000px;
+    margin-bottom: 40px;
+    
+}
+#count{
+    color:black;
+}
+#total{
+    color:orange;
+}
